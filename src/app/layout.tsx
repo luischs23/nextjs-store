@@ -1,8 +1,7 @@
-"use client"
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { Header } from "./components/Header";
+import { Header } from "./components/shared/Header";
 import "./globals.css";
+import { Footer } from "./components/shared/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +16,7 @@ export default function RootLayout({ //Root Global que es el graper de toda la a
       <body className={inter.className}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
