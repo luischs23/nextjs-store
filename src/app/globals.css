@@ -25,4 +25,10 @@
   .linearg{
     @apply bg-gradient-to-bl from-[#4F56FF] to-[#FF4980];
   }
+  .button {
+    @apply bg-transparent border-none cursor-pointer;
+  }
+  .button--border {
+    @apply border-2 border-red-500;
+  }
 }
