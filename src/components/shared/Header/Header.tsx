@@ -4,12 +4,12 @@ export const Header = ()=>{
     return (
         <header>
           <nav>
-            <ul>
+            <ul className="flex flex-row justify-center mx-auto py-2 gap-10 list-none text-secondary">
               <Link href="/">
-                <li>Home</li>
+                <li className="text-lg font-normal no-underline">Home</li>
               </Link>
               <Link href="/store">
-                <li>About</li>
+                <li className="text-lg font-normal no-underline">Store</li>
               </Link>
             </ul>
           </nav>
