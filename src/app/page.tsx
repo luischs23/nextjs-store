@@ -1,13 +1,13 @@
-import { Description } from "./components/home/Description";
-import { Hero } from "./components/home/Hero";
-import { MainProducts } from "./components/home/MainProducts";
+import { Suspense } from "react";
+import { MainProduct } from "./components/home/MainProducts";
+import { Loader } from "./components/shared/Loader";
 
 export default function Home() {
   return (
     <main>
-      <Hero />
-      <Description />
-      <MainProducts />
+      <Suspense fallback={<Loader />}>
+        <MainProduct />
+      </Suspense>
     </main>
-  );
+  );  
 }

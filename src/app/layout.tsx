@@ -1,7 +1,9 @@
 import { Roboto } from "next/font/google";
+import { Hero } from "./components/home/Hero";
+import { Description } from "./components/home/Description";
 import { Header } from "./components/shared/Header";
-import "./globals.css";
 import { Footer } from "./components/shared/Footer";
+import "./globals.css";
 
 const roboto = Roboto({ 
   weight:["100","300","500","700"],
@@ -18,6 +20,8 @@ export default function RootLayout({ //Root Global que es el graper de toda la a
     <html lang="en">
       <body className={`${roboto.className} ${tailwindClasses}`}>
         <Header />
+        <Hero />
+        <Description />
         {children}
         <Footer />
       </body>
