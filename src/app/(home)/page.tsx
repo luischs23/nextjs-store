@@ -6,8 +6,7 @@ export default function Home() {
   return (
     <main>
       <Suspense fallback={<Loader />}>
-        <h1>Products</h1>
-        {/* <MainProduct /> */}
+        <MainProduct />
       </Suspense>
     </main>
   );  
