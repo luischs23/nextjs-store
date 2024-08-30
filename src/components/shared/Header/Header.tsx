@@ -11,6 +11,9 @@ export const Header = ()=>{
               <Link href="/store">
                 <li className="text-lg font-normal no-underline">Store</li>
               </Link>
+              <Link href="/test">
+                <li className="text-lg font-normal no-underline">Test</li>
+              </Link>
             </ul>
           </nav>
         </header>
