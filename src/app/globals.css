@@ -31,4 +31,7 @@
   .button--border {
     @apply border-2 border-red-500;
   }
+  .text-glow {
+    text-shadow: 0 0 7px #ff4980, 0 0 10px #ff4980, 0 0 21px #ff4980;
+  }
 }
