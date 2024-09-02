@@ -1,9 +1,11 @@
+import { getMainProducts } from 'app/services/shopify/products';
 import Image from 'next/image'
 
 export const MainProduct = async () => {
 
-  const response = await fetch('http://localhost:3000/api')
-  const {products} = await response.json()
+  // const response = await fetch('http://localhost:3000/api')
+  // const {products} = await response.json()
+  const products = await getMainProducts();
   
   return (
     <section className="text-center text-3xl">

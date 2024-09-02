@@ -2,7 +2,8 @@ import { env } from "process"
 
 export const shopifyUrls = {
     products:{
-        'all':`https://${env.SHOPIFY_HOSTNAME}/admin/api/2024-07/products.json`
+        'all':`https://${env.SHOPIFY_HOSTNAME}/admin/api/2024-07/products.json`,
+        mainProducts: `https://${env.SHOPIFY_HOSTNAME}/admin/api/2024-07/collections/615675691213/products.json`,
     },
     
     collections:{
