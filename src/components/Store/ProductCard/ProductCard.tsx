@@ -9,7 +9,7 @@ const priceTag = ("w-fit inline-block bg-red-500 text-white p-1 absolute top-[-0
 
 export const ProductCard = ({ product }: ProductCardInterface) => {
   return (
-    <Link href={`/articulo/${product.handle}?id=${product.id}`} className="text-white no-underline cursor-pointer">
+    <Link href={`/products/${product.handle}?id=${product.id}`} className="text-white no-underline cursor-pointer">
       <article className="flex flex-col relative">
         <Image
           src={product.image}

@@ -3,6 +3,8 @@ import { shopifyUrls } from "./urls"
 
 export const getCollections = async () => {
     try {
+      const url = shopifyUrls.collections.all;
+      console.log(`Solicitando colecciones: ${url}`);
       const response = await fetch(shopifyUrls.collections.all, {
         headers: new Headers({
           'X-Shopify-Access-Token': env.SHOPIFY_TOKEN
