@@ -7,10 +7,10 @@ export const NewAccountForm = () => {
   const [errors, setErrors] = useState<string[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
 
-  const handleSubmit = (event:any) => {
+  const handleSubmit = async (event:any) => {
     event.preventDefault();
     const formData = new FormData(event.target);
-    handleCreateUser(formData)
+    await handleCreateUser(formData)
   }
 
   return (
@@ -19,14 +19,14 @@ export const NewAccountForm = () => {
       <form className="grid grid-cols-2 grid-rows-4 gap-x-4 gap-y-8" onSubmit={handleSubmit}>
         <input 
             type="text" 
-            name="first_name" 
+            name="firstName" 
             placeholder="Name" 
             disabled={loading}
             className="inputform" 
             />
         <input 
             type="text" 
-            name="last_name" 
+            name="lastName" 
             placeholder="Lastname" 
             disabled={loading}
             className="inputform" 
