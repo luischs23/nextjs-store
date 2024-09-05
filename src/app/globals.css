@@ -34,4 +34,7 @@
   .text-glow {
     text-shadow: 0 0 7px #ff4980, 0 0 10px #ff4980, 0 0 21px #ff4980;
   }
+  .inputform {
+    @apply col-span-1 text-base font-light py-2 px-4 bg-transparent border-b border-gray-400 focus:outline-none focus:border-pink-600
+  }
 }
