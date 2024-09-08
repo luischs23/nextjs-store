@@ -30,7 +30,7 @@ export const ProductView = ({ product }: ProductViewProps) => {
         <span className="text-color-secondary text-[2.125rem] font-bold">
           $ {product.price}
         </span>
-        <ProductViewItemsOrder maxQuantity={product.quantity} />
+        <ProductViewItemsOrder maxQuantity={product.quantity} product={product}/>
       </section>
     </main>
   )
