@@ -6,10 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "analyze": "cross-env ANALYZE=true next build"
   },
   "dependencies": {
     "@google/generative-ai": "^0.17.2",
+    "@next/bundle-analyzer": "^14.2.9",
     "ai": "^3.3.32",
     "classnames": "^2.5.1",
     "cors": "^2.8.5",
