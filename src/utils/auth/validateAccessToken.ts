@@ -8,7 +8,12 @@ export const validateAccessToken = async () => {
   
     if(accessToken) { 
       const graphqlClient = GraphQLClientSingleton.getInstance().getClient()
-      const { customer } = await graphqlClient.request(customerName, {
+      const { customer }: {
+        customer: {
+          firstName: string
+          email: string
+        }
+      } = await graphqlClient.request(customerName, {
         customerAccessToken: accessToken
       })
       if(customer?.firstName) { //otra condicional por si acaso xd
